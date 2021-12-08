@@ -1,0 +1,29 @@
+﻿eureka:
+  client:
+    service-url:
+      defaultZone: http://xmk8200.com:8200/eureka/,http://root:root@xmk8100.com:8100/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: cloud-congfig-client
+server:
+  port: 5555
+spring:
+  profiles: dev
+  application:
+    name: cloud-congfig-client
+
+---
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://xmk8200.com:8200/eureka/,http://root:root@xmk8100.com:8100/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: cloud-congfig-client
+server:
+  port: 6666
+spring:
+  profiles: test
+  application:
+    name: cloud-congfig-client
