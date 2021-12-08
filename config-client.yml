@@ -13,7 +13,7 @@ spring:
     name: cloud-congfig-client
 xmk:
   username: xiemengke
-  password: password
+  password: 123456
 ---
 
 eureka:
